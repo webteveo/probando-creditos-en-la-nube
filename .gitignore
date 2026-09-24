@@ -1,3 +1,4 @@
 # Datos de visitantes y configuración local: no se suben
 data/metrics/*.ndjson
 .claude/settings.local.json
+_site/
