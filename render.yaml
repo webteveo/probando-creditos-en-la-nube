@@ -1,0 +1,13 @@
+# Deploy en Render: https://render.com/deploy?repo=https://github.com/webteveo/probando-creditos-en-la-nube
+# Cada push a la rama principal se publica solo.
+services:
+  - type: web
+    name: cerrajero
+    runtime: docker
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /robots.txt
+    envVars:
+      # Clave de aplicación de Gmail para el formulario de contacto (se carga en el panel de Render)
+      - key: EMAIL_SMTP_PASSWORD
+        sync: false
