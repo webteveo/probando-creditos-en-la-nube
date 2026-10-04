@@ -45,7 +45,7 @@ RewriteRule ^sitemap\.xml$ sitemap.php [L]
 RewriteRule ^llms\.txt$ llms.php [L]
 
 # Bloquear acceso directo a carpetas internas
-RewriteRule ^(config|src|data|vendor)(/|$) - [F,L]
+RewriteRule ^(config|src|data|vendor|estudios)(/|$) - [F,L]
 
 # Regla general
 RewriteCond %{REQUEST_FILENAME} !-f
